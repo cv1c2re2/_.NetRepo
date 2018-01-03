@@ -1,0 +1,11 @@
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\bin\Debug\netcoreapp2.0\RazorPagesMovie.deps.json
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\bin\Debug\netcoreapp2.0\RazorPagesMovie.runtimeconfig.json
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\bin\Debug\netcoreapp2.0\RazorPagesMovie.runtimeconfig.dev.json
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\bin\Debug\netcoreapp2.0\RazorPagesMovie.dll
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\bin\Debug\netcoreapp2.0\RazorPagesMovie.pdb
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\obj\Debug\netcoreapp2.0\RazorPagesMovie.csproj.CoreCompileInputs.cache
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\obj\Debug\netcoreapp2.0\RazorPagesMovie.AssemblyInfoInputs.cache
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\obj\Debug\netcoreapp2.0\RazorPagesMovie.AssemblyInfo.cs
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\obj\Debug\netcoreapp2.0\RazorPagesMovie.dll
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\obj\Debug\netcoreapp2.0\RazorPagesMovie.pdb
+C:\Users\ailagan\source\repos\_.NetRepo\RazorPagesMovie\RazorPagesMovie\obj\Debug\netcoreapp2.0\RazorPagesMovie.csprojResolveAssemblyReference.cache
