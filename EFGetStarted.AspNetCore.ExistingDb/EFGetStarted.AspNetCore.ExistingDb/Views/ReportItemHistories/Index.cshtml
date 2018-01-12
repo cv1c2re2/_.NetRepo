@@ -1,0 +1,516 @@
+﻿@model IEnumerable<EFGetStarted.AspNetCore.ExistingDb.Models.ReportItemHistory>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportItemId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Niin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PartNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Qty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitCost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PicturesAvailable)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProceedsRetention)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgencyLocationCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SpecialDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompletedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Completed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReqScrapPickup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CertDestruction)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportCancelled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GsaComments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EngrDeision)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EngrComments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EngrDecidedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToEngDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MngtDecision)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManagerComments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MngtDecidedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WarehouseComments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccessLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SurplusReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InternalReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DropInternalFlag)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExcessRelDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FscapCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Make)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AcquisitionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManufacturedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manufacturer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SpecialDesCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Agybur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgyControlNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppropCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClRefNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClLineItemNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CountryCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Drmo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FairMarketValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HazmatCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OverseasInd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PlantClCaseNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReimbReqd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vessels50FeetOver)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShipName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GsaRegionCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GsaSubmitRespNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GsaSubmitTimeElap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GsaSubmitMsg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropLocAddr1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropLocAddr2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropLocAddr3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropLocCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropLocState)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropLocZip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Exchsale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cntrinvcd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FiscalYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportAgencyId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FederalAssetSalesId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReimbursementTypeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FscId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SupplyConditionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DisposalConditionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DemilitarizationId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitOfIssueId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusCodeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastUpdatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastUpdatedBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MngtDecisionId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReportItemId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReportNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LocationId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ItemName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Niin)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ItemDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PartNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Qty)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitCost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PicturesAvailable)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProceedsRetention)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgencyLocationCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SpecialDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompletedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Completed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReqScrapPickup)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CertDestruction)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReportCancelled)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GsaComments)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EngrDeision)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EngrComments)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EngrDecidedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ToEngDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MngtDecision)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ManagerComments)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MngtDecidedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WarehouseComments)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccessLevel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SurplusReleaseDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InternalReleaseDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DropInternalFlag)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExcessRelDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FscapCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReportCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Make)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AcquisitionDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ManufacturedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Manufacturer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SpecialDesCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Agybur)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgyControlNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppropCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClRefNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClLineItemNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CountryCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Drmo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FairMarketValue)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HazmatCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OverseasInd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlantClCaseNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReimbReqd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vessels50FeetOver)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShipName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GsaRegionCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GsaSubmitRespNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GsaSubmitTimeElap)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GsaSubmitMsg)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropLocAddr1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropLocAddr2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropLocAddr3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropLocCity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropLocState)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropLocZip)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Exchsale)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cntrinvcd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FiscalYear)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReportAgencyId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FederalAssetSalesId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReimbursementTypeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FscId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SupplyConditionId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DisposalConditionId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DemilitarizationId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitOfIssueId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StatusCodeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastUpdatedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastUpdatedBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MngtDecisionId)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ReportItemHistoryId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ReportItemHistoryId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ReportItemHistoryId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

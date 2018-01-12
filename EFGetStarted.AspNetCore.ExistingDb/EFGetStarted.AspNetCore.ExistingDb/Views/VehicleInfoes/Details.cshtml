@@ -1,0 +1,114 @@
+﻿@model EFGetStarted.AspNetCore.ExistingDb.Models.VehicleInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VehicleInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleIdNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VehicleIdNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelYear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ModelYear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EstMileage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EstMileage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NoCylinders)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NoCylinders)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedBy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdatedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdatedDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdatedBy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdatedBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Transmission)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Transmission)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgencyClass)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgencyClass)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleTag)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VehicleTag)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BodyStyle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BodyStyle.CreatedBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ColorGradient)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ColorGradient.CreatedBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FuelType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FuelType.CreatedBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfCylinders)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NoOfCylinders.CreatedBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleColor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VehicleColor.CreatedBy)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.VehicleInfoId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

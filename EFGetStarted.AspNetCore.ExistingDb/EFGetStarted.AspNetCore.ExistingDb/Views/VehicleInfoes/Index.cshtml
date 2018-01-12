@@ -1,0 +1,125 @@
+﻿@model IEnumerable<EFGetStarted.AspNetCore.ExistingDb.Models.VehicleInfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.VehicleIdNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ModelYear)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EstMileage)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NoCylinders)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedBy)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastUpdatedDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastUpdatedBy)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Transmission)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AgencyClass)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.VehicleTag)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BodyStyle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ColorGradient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FuelType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoOfCylinders)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VehicleColor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VehicleIdNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModelYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstMileage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoCylinders)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastUpdatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastUpdatedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Transmission)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgencyClass)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VehicleTag)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BodyStyle.CreatedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ColorGradient.CreatedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FuelType.CreatedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoOfCylinders.CreatedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VehicleColor.CreatedBy)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VehicleInfoId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.VehicleInfoId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.VehicleInfoId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
